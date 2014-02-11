@@ -10,6 +10,7 @@
 
 @implementation DEVAnalytics
 
+
 + (id)allocWithZone:(struct _NSZone *)zone
 {
     return [self sharedInstance];
@@ -24,7 +25,6 @@
     }
     return sharedInstance;
 }
-
 
 - (NSArray *)config
 {

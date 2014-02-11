@@ -19,7 +19,7 @@
 		07A2463D18AAB57500F7B004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A2462518AAB57500F7B004 /* UIKit.framework */; };
 		07A2464518AAB57500F7B004 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07A2464318AAB57500F7B004 /* InfoPlist.strings */; };
 		07A2464718AAB57500F7B004 /* AnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2464618AAB57500F7B004 /* AnalyticsTests.m */; };
-		07A2465218AAB5CF00F7B004 /* DEVAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2465118AAB5CF00F7B004 /* DEVAnalytics.m */; };
+		07A2469118AABD5B00F7B004 /* DEVAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2469018AABD5B00F7B004 /* DEVAnalytics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		07A2464218AAB57500F7B004 /* AnalyticsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnalyticsTests-Info.plist"; sourceTree = "<group>"; };
 		07A2464418AAB57500F7B004 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07A2464618AAB57500F7B004 /* AnalyticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalyticsTests.m; sourceTree = "<group>"; };
-		07A2465018AAB5CF00F7B004 /* DEVAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVAnalytics.h; sourceTree = "<group>"; };
-		07A2465118AAB5CF00F7B004 /* DEVAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVAnalytics.m; sourceTree = "<group>"; };
+		07A2468F18AABD5B00F7B004 /* DEVAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DEVAnalytics.h; path = Classes/DEVAnalytics.h; sourceTree = "<group>"; };
+		07A2469018AABD5B00F7B004 /* DEVAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DEVAnalytics.m; path = Classes/DEVAnalytics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +110,11 @@
 		07A2462718AAB57500F7B004 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				07A2468E18AABD4400F7B004 /* Classes */,
 				07A2463018AAB57500F7B004 /* DEVAppDelegate.h */,
 				07A2463118AAB57500F7B004 /* DEVAppDelegate.m */,
 				07A2463318AAB57500F7B004 /* Images.xcassets */,
 				07A2462818AAB57500F7B004 /* Supporting Files */,
-				07A2465018AAB5CF00F7B004 /* DEVAnalytics.h */,
-				07A2465118AAB5CF00F7B004 /* DEVAnalytics.m */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -147,6 +146,15 @@
 				07A2464318AAB57500F7B004 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07A2468E18AABD4400F7B004 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				07A2468F18AABD5B00F7B004 /* DEVAnalytics.h */,
+				07A2469018AABD5B00F7B004 /* DEVAnalytics.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +255,7 @@
 			files = (
 				07A2463218AAB57500F7B004 /* DEVAppDelegate.m in Sources */,
 				07A2462E18AAB57500F7B004 /* main.m in Sources */,
-				07A2465218AAB5CF00F7B004 /* DEVAnalytics.m in Sources */,
+				07A2469118AABD5B00F7B004 /* DEVAnalytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
