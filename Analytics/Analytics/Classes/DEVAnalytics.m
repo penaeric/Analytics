@@ -31,7 +31,10 @@
     return @[@"this",
              @"is",
              @"an",
-             @"array"];
+             @"array",
+             @"coming",
+             @"from",
+             @"DEVAnalytics"];
 }
 
 @end
